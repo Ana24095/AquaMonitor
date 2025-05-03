@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="75" cy="75" r="55" stroke="#262730" stroke-width="4" stroke-dasharray="10 5"/>
+  <path d="M30 110L40 85 50 110M33 102H47M60 85L70 110 80 85M90 85V110M90 85H105M90 97H100M115 85L125 97 135 85M115 110L125 97 135 110" stroke="#262730" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M30 110L40 85 50 110M33 102H47M60 85L70 110 80 85M90 85V110M90 85H105M90 97H100M115 85L125 97 135 85M115 110L125 97 135 110" stroke="#00b8a9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

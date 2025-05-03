@@ -1,0 +1,11 @@
+streamlit
+pandas
+plotly
+openai
+requests
+numpy
+matplotlib
+folium
+streamlit-folium
+anthropic
+deepseek-ai
