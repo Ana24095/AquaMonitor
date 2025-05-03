@@ -1,0 +1,14 @@
+[server]
+headless = true
+address = "0.0.0.0"
+port = 5000
+
+[theme]
+primaryColor = "#00b8a9"  # Aqua green
+backgroundColor = "#ffffff"  # White
+secondaryBackgroundColor = "#f0f2f6"  # Light gray
+textColor = "#262730"  # Dark gray, almost black
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false

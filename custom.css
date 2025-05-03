@@ -1,0 +1,145 @@
+/* Custom CSS for Aqua Nova Dashboard */
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #00b8a9;
+    padding: 1rem;
+}
+
+[data-testid="stSidebarNav"] {
+    background-color: #00b8a9;
+}
+
+[data-testid="stSidebarNavItems"] {
+    padding-top: 2rem;
+}
+
+.st-emotion-cache-1cypcdb {
+    background-color: #00b8a9;
+}
+
+/* Buttons in sidebar */
+[data-testid="stSidebar"] [data-testid="baseButton-secondary"] {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+[data-testid="stSidebar"] [data-testid="baseButton-secondary"]:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-testid="stSidebar"] [data-testid="baseButton-primary"] {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/* Main content styling */
+.main .block-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Status cards */
+.status-card {
+    background-color: #0d3b49;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.status-card h3 {
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.status-card .value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.normal-status {
+    color: #00b8a9;
+}
+
+.warning-status {
+    color: #ffd166;
+}
+
+.critical-status {
+    color: #ef476f;
+}
+
+/* Dashboard title */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #262730;
+}
+
+/* Section headers */
+h2, h3 {
+    color: #262730;
+    font-weight: bold;
+}
+
+/* Metric tiles */
+[data-testid="stMetric"] {
+    background-color: #f0f2f6;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Charts and graphs */
+[data-testid="stPlotlyChart"] {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+/* Cards and widgets */
+[data-testid="stExpander"] {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Alerts styling */
+.alert-warning {
+    background-color: #ffd166;
+    color: #262730;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.alert-critical {
+    background-color: #ef476f;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Add a custom logo spacing at the top of the sidebar */
+[data-testid="stSidebarNavItems"] div:first-child {
+    margin-bottom: 2rem;
+}

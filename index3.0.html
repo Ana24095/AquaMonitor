@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Nova</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="sass.css">
+    <link rel="stylesheet" href="layets.css">
+    <!--  Chart.js se cargue correctamente -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <!-- ESTILO -->
+    <style>
+        .chart-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        #error-message {
+            color: red;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #ffe6e6;
+            border-radius: 4px;
+            display: none; /* Se mostrará cuando haya un error */
+            margin-left: 70px;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #e6f3ff;
+            border-radius: 4px;
+            margin-left: 70px
+        }
+    </style>
+
+    <style type="text/css">
+        body{
+            background-color: #ededed;
+        }
+    </style>
+
+
+</head>
+
+
+
+
+<body>
+    
+    <div class="main-wrapper">
+        <!-- --NAVBAR-- -->
+         <div class="header-container fixed-top">
+            <header class="header navbar navbar-expand-sm expand-header">
+                <div class="header-left d-flex">
+                    <div class="logo">
+                        <img src="img/INNOVA (3 x 1 in).svg" width="110px" height="110px">
+                    </div>
+                    <a href="" class="sidebarCollapse"data-placement="bottom">
+                        <span class="fas fa-bars"></span>
+                    </a>
+                </div>
+                <ul class="navbar-item flex-row ml-auto">
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="img/bell-fill.svg" alt="" class="icon">
+                            <p class="count">1</p>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item message-item">
+                                    <img src="img/exclamation-triangle-fill.svg" alt="" class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Precaución de Deslizamiento</p>
+                                            <p class="note-time">20 min ago</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="" class="nav-link user" id="Notify" data-bs-toggle="dropdown">
+                            <img src="img/person-fill.svg" alt="" class="icone">
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="user-profile-section">
+                                <div class="media mx-auto">
+                                    <img src="img/person-fill.svg" width="50px" height="50px" class="img-fluid mr-2">
+                                    <div class="media-body">
+                                        <h5>UserName12034</h5>
+                                        <p>Super admin</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="dp-main-menu">
+                                <a href="" class="dropdown-item"><span class="fas fa-user"></span>Profile</a>
+                                <a href="" class="dropdown-item"><span class="fas fa-inbox"></span>Inbox</a>
+                                <a href="" class="dropdown-item"><span class="fas fa-lock-open"></span>Look Screen</a>
+                                <a href="" class="dropdown-item"><span class="fas fa-outdent"></span>Log Out</a>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </header>
+         </div>
+        <!-- --NAVBAR END-- -->
+
+
+        <!-- --------------------SIDERBAR START--------------------- -->
+         <div class="left-menu">
+            <div class="menubar-content">
+                <nav class="animated baunceInDown">
+                    <ul id="sidebar">
+                        <li>
+                            <a href="#"><i class="fas fa-home"></i>Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-chart-simple"></i>Analysis</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-location-dot"></i>Localization</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-bell"></i>Alerts</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-file-lines"></i>Reports</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+         </div>
+
+
+
+
+        <!-- --------------------SIDEBAR END------------------------ --> 
+
+    </div>
+
+    <!-- -----------------------Chart ----------------------- -->
+
+    <div class="left-menu">
+        <div class="menubar-content">
+            <nav class="animated bounceInDown">
+                <ul id="sidebar">
+                    <li><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chart-simple"></i>Analysis</a></li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i>Localization</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bell"></i>Alerts</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file-lines"></i>Reports</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content-wrapper">
+        <h1>Dashboard</h1>
+        
+        <div id="error-message"></div>
+        <div class="status">
+            Estado: <span id="connection-status">Conectando...</span><br>
+            Última actualización: <span id="lastUpdate">Ninguna</span>
+        </div>
+
+        <div class="chart-container">
+            <h2>PH</h2>
+            <canvas id="phChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Temperatura</h2>
+            <canvas id="temperaturaChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Distancia</h2>
+            <canvas id="distanciaChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Turbidez</h2>
+            <canvas id="turbidezChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h2>Caudal</h2>
+            <canvas id="caudalChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="chart-manager.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+

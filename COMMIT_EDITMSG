@@ -1,0 +1,7 @@
+Integrate DeepSeek model to enhance AI predictions and system reliability
+
+Refactors the prediction engine to use DeepSeek, OpenAI, or Claude models, and adds error handling for improved local response generation.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: 2a107d51-0fbb-43e2-be3a-729d7319a8d3
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/8e76c164-4ac4-46ee-b3b3-c1a89f2d29f7/3438d3eb-3e0a-45bb-b11a-f94b6ed7015a.jpg
